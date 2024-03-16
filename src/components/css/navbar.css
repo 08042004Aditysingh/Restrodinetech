@@ -48,6 +48,10 @@ border:none;
 color: #ADA7A7;
 }
 
+.user{
+  margin-right: 1.5rem;
+  width:5.5rem;
+}
 @media screen and (max-width:600px){
 
   .search{
