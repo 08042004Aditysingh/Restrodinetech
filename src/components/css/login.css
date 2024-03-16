@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Port+Lligat+Sans&display=swap');
+.mainclass{
+    background: linear-gradient(90deg, #591C68 85.25%, #77248B 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:6rem;
+    height:auto;
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    
+
+}
+
+
+.retrodinetech{
+    color:#FFFF;
+    font-family: Port Lligat Sans;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+    
+    
+
+}
+
+.order_at_ease{
+    font-family: Poppins;
+font-size: 32px;
+font-weight:lighter;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.chairs{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2.7rem;
+    height:302px;
+    width:720px;
+    margin-left: -140px;
+    
+}
+img.chair_img{
+    height:262px;
+    width:302px;
+    margin-bottom: 2rem;
+
+}
+
+.login_section{
+    background-color: #FFFFFF;
+    width: 500px;
+height: 680px;
+margin-top: 80px;
+border-radius: 3px;
+border: 3px solid #FFFFFF;
+box-shadow: 0px 4px 4px 0px #00000040;
+margin-right: -4rem;
+padding:2rem;
+display:flex;
+flex-direction: column;
+gap:2rem;
+align-items: center;
+justify-content: center;
+margin-bottom: 4rem;
+
+
+}
+
+.welcome_to{
+    width: 478px;
+height: 113px;
+top: 121px;
+left: 853px;
+font-family: Poppins;
+font-size: 32px;
+font-weight: 600;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+
+
+}
+
+.tech{
+     font-family: Poppins;
+font-size: 58px;
+font-weight:bolder;
+line-height: 87px;
+letter-spacing: 0em;
+color: #77248BB5;
+margin-bottom:5rem;
+
+}
+
+.companies{
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+}
+/* font-family: Poppins;
+font-size: 58px;
+font-weight: 700;
+line-height: 87px;
+letter-spacing: 0em;
+text-align: left;
+
+font-family: Poppins;
+font-size: 32px;
+font-weight: 600;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left; */
+.OR{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    
+}
+.line{
+    height:1px;
+    width:220px;
+}
+
+.cursr{
+    cursor: pointer;
+}
+
+.or{
+    font-family: Poppins;
+font-size: 18px;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+color:#757575;
+}
+
+
+.box{
+    width: 490px;
+height: 50.15px;
+top: 566px;
+left: 857px;
+border-radius: 8px;
+border: 1px solid #757575;
+box-shadow: 0px 4px 4px 0px #00000040;
+align-items: center;
+display: flex;
+flex-direction: row;
+padding-left:1rem;
+gap:0rem;
+
+
+
+}
+.login_btn_box{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.icon{
+    width:30px;
+}
+.lng_btn{
+    margin-top:2rem;
+}
+
+.enter{
+    font-family: Poppins;
+font-size: 18px;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+color:#757575;
+
+height: 40px;
+width:325px;
+padding-left:5rem;
+border:0;
+
+
+
+}
+
+/*================MEDIA QUERIES (MEDIUM DEVICES)==============*/
+@media screen and (max-width:1024px){
+    .chairs{
+        display:none;
+    }
+    .login_section{
+        width: 500px;
+        height: 600px;
+        margin-right: 0rem;
+    }
+    .welcome_to{
+        width: 400px;
+    height: 100px;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    
+    }
+    .tech{
+   font-size: 45px;
+   line-height: 30px;
+   margin-bottom:2rem;
+   
+   }
+   .mainclass{
+    overflow-x: hidden;
+   }
+
+   .google,.facebook{
+    width:500px;
+    height:auto;
+   }
+   .line{
+    height:1px;
+    width:190px;
+}
+}
+
+/*===============MEDIA QUERIES (SMALL DEVICES)=====================*/
+@media screen and (max-width:600px){
+
+    .mainclass{
+        overflow-y: hidden;
+    }
+    .chairs{
+        display:none;
+    }
+
+    .login_section{
+        width: 280px;
+        height: 500px;
+        margin-right: 0rem;
+        margin-top: 20px;
+        gap:2rem;
+    }
+    .line{
+        height:1px;
+        width:130px;
+    }
+    .google,.facebook{
+        width:330px;
+        height:auto;
+       }
+       .welcome_to{
+        width: 300px;
+    height: 70px;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    
+    }
+    .tech{
+   font-size: 35px;
+   line-height: 0px;
+   margin-bottom:6rem;
+   
+   }
+   .box{
+    width: 300px;
+height: 45px;
+gap:0rem;
+
+   }
+   .enter{
+    background-color: transparent;
+    height: 40px;
+    width:260px;
+    padding-left: 0px;
+
+   }
+
+   .lng_btn{
+    margin-top:0rem;
+}
+
+
+
+}
