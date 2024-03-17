@@ -19,21 +19,21 @@ const Login = () => {
             <span className="tech">RestroDineTech</span>
           </div>
           <div className="companies">
-            <div className="cursr box">
+            <div className="cursr box2">
               {" "}
               <img src="../ggl.png" alt="password" className="icon"/>
               <input
                 type="text"
                 className="enter"
-                placeholder="       Enter your Password"
+                placeholder="       Login with Google"
               />
             </div>
-            <div className="cursr box">
+            <div className="cursr box2">
             <img src="../fcb.png" alt="password" className="icon"/>
               <input
                 type="text"
                 className="enter"
-                placeholder="       Enter your Password"
+                placeholder="       Login with Facebook"
               />
             </div>
           </div>
