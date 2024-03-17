@@ -109,7 +109,7 @@ margin-bottom:5rem;
 
 .companies{
     display: flex;
-    gap:1rem;
+    gap:2rem;
     flex-direction: column;
 }
 /* font-family: Poppins;
