@@ -73,7 +73,7 @@ color: #13131399;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap:23rem;
+    gap:22rem;
     padding-left: 4rem;
 
 
@@ -115,7 +115,7 @@ color: #FFFFFF;
     align-items: center;
     
     padding-left:4rem;
-    gap:16rem;
+    gap:15.5rem;
 }
 .span3{
     display: flex;
