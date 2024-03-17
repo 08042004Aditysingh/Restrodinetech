@@ -19,12 +19,22 @@ const Login = () => {
             <span className="tech">RestroDineTech</span>
           </div>
           <div className="companies">
-            <div className="cursr">
+            <div className="cursr box">
               {" "}
-              <img src="../Google.png" alt="google" className="google" />
+              <img src="../ggl.png" alt="password" className="icon"/>
+              <input
+                type="text"
+                className="enter"
+                placeholder="       Enter your Password"
+              />
             </div>
-            <div className="cursr">
-              <img src="../Facebook.png" alt="facebook" className="facebook"/>
+            <div className="cursr box">
+            <img src="../fcb.png" alt="password" className="icon"/>
+              <input
+                type="text"
+                className="enter"
+                placeholder="       Enter your Password"
+              />
             </div>
           </div>
           <div className="OR">

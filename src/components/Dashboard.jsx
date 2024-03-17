@@ -58,8 +58,8 @@ const Dashboard = () => {
         </div>
         <div className="both_div">
           <div className="color_div">
-            <span className="category">Category</span>
-            <span className="item_name">Item Name</span>
+            <span className="category">CATEGORY</span>
+            <span className="item_name">ITEM NAME</span>
             <span className="eta">ETA</span>
           </div>
           {list.map((i)=><div className="second_div">
@@ -67,7 +67,7 @@ const Dashboard = () => {
             <div className="spans"><div className="itm sapn1">{i.category}</div>
             <div className="itm span2">{i.item}</div>
             <div className="itm span3">{i.eta}</div></div>
-            <button onClick={(e)=>handleDelete(i._id)} className="button"><img src="../Delete.png" alt="delete" className="delete"/></button>
+            <button onClick={(e)=>{handleDelete(i._id);alert(`${i.item} has been deleted`)}} className="button"><img src="../Delete.png" alt="delete" className="delete"/></button>
           </div>)}
         </div>
       </div>

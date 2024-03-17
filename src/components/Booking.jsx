@@ -82,7 +82,7 @@ const Booking = (props) => {
             </div>
 
             <div>
-              <button className="btn">Submit</button>
+              <button onClick={()=>alert("Item Added")}className="btn">Submit</button>
             </div>
           </form>
         </div>

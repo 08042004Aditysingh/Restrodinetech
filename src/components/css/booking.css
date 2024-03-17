@@ -34,7 +34,7 @@ line-height: 23px;
 letter-spacing: 0em;
 text-align: left;
 color: #FFFFFF;
-padding-left:3.3em ;
+padding-left:3em ;
 
 
 
@@ -77,11 +77,10 @@ color: #77248BB5;
 
 .common{
     width: 350px;
-height: 36px;
-box-shadow: 0px 4px 4px 0px #00000040;
-border: 1px solid #757575;
+height: 45px;
+border: 1px solid #c6bbbb;
 background: #FFFFFF;
-border-radius: 10px;
+border-radius: 3px;
 font-family: Poppins;
 font-size: 16px;
 font-weight: 700;
@@ -115,7 +114,7 @@ color: #77248B;
         justify-content: center;
         align-items: center;
         margin-top: 1.5rem;
-        overflow-y: hidden;
+        gap:1.5rem
     }
 .add_div{
     margin-bottom: -4rem;
@@ -124,25 +123,24 @@ color: #77248B;
         width: 200px;
     height: 0px;
     font-family: Poppins;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 0px;
     letter-spacing: 0px;
-    text-align: left;
+    text-align: center;
     color: #77248BB5;
     
     
     }
     .booking{
         width: 300px;
-    height: 500px;
+    height: 650px;
     margin-top: 2rem;
     border-radius: 3px;
-    border: 3px solid #FFFFFF;
-    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: 4px 4px 4px 4px #9f949440;
     display:flex;
     flex-direction: column;
-    gap:2rem;
+    gap:3rem;
     justify-content: center;
     align-items: center;
     }
@@ -151,7 +149,7 @@ color: #77248B;
         width: 250px;
     height: 48px;
     font-family: Poppins;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     line-height: 40px;
     text-align: center;
@@ -165,6 +163,6 @@ color: #77248B;
     }
 
     .common{
-        width:250px;
+        width:200px;
     }
 }
