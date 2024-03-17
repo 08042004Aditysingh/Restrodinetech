@@ -30,10 +30,12 @@ const Booking = (props) => {
       <Sidebar />
       <div className="booking_div">
         <div className="menu_details">Menu Details</div>
-        <div className="booking">
+        <div >
+          
+          <form onSubmit={Submit} className="booking">
           <div className="add_menu">Add Your Menu</div>
-          <form onSubmit={Submit}>
             <div className="both">
+              
               <div className="common2">Category</div>
               <div>
                 <select
