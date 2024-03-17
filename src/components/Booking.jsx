@@ -16,9 +16,8 @@ const Booking = (props) => {
   const Submit = (e) => {
     e.preventDefault();
     axios
-      .post("https://restrodinetech.onrender.com/booking", { category, item, eta })
+      .post("https://restro-dine-backend.onrender.com/booking", { category, item, eta })
       .then((result) => {
-        console.log(result);
         navigate("/dashboard");
       })
       .catch((err) => console.log(err));
