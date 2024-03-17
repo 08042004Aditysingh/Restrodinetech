@@ -33,7 +33,7 @@ const Dashboard = () => {
   const handleDelete = (id) =>{
     axios.delete('http://localhost:3000/deleteItem/'+id)
     .then((res)=>{console.log(res);
-     window.location.reload();})
+     })
     .catch(err=>console.log(err))
   }
 
