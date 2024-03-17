@@ -50,7 +50,7 @@ color: #ADA7A7;
 
 .user{
   margin-right: 1.5rem;
-  width:5.5rem;
+  width:auto;
 }
 @media screen and (max-width:600px){
 
