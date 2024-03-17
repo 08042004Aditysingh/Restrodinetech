@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import "./css/dashboard.css";
 import Booking from "./Booking";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import { Link } from 'react-router-dom'
-const Dashboard = (props) => {
+import axios from "axios";
+
+const Dashboard = () => {
+
   const items = [
     {
       value1: "Category",
@@ -20,7 +23,20 @@ const Dashboard = (props) => {
     },
   ];
 
-  const [list, setList] = useState(props.list)
+  const [list, setList] = useState([]);
+  useEffect(()=>{
+    axios.get("http://localhost:3000")
+    .then(result=>setList(result.data))
+    .catch(err=>console.log(err))
+  },[])
+
+  const handleDelete = (id) =>{
+    axios.delete('http://localhost:3000/deleteItem/'+id)
+    .then((res)=>{console.log(res);
+     window.location.reload();})
+    .catch(err=>console.log(err))
+  }
+
 
   return (
     <>
@@ -44,13 +60,12 @@ const Dashboard = (props) => {
             <span className="item_name">Item Name</span>
             <span className="eta">ETA</span>
           </div>
-          {list.map((item)=><div className="second_div">
+          {list.map((i)=><div className="second_div">
             
-            <div className="spans"><div className="itm sapn1">{item.value1}</div>
-            <div className="itm span2">{item.value2}</div>
-            <div className="itm span3">{item.value3}</div></div>
-            <div onClick={()=>{const newlist = list.filter((i)=>i.value2!==item.value2);
-            setList(newlist);}}><img src="../Delete.png" alt="delete" className="delete"/></div>
+            <div className="spans"><div className="itm sapn1">{i.category}</div>
+            <div className="itm span2">{i.item}</div>
+            <div className="itm span3">{i.eta}</div></div>
+            <button onClick={(e)=>handleDelete(i._id)} className="button"><img src="../Delete.png" alt="delete" className="delete"/></button>
           </div>)}
         </div>
       </div>
@@ -59,3 +74,6 @@ const Dashboard = (props) => {
 };
 
 export default Dashboard;
+
+// onClick={()=>{const newlist = list.filter((it)=>it.value2!==i.value2);
+// setList(newlist);}}

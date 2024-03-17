@@ -164,7 +164,10 @@ left: 1073px;
     padding:4px;
 }
 
-
+.button{
+    border:none;
+    background-color: transparent;
+}
 @media screen and (max-width:600px){
     .dashboard_div{
         top:10%;
