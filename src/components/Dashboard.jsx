@@ -25,15 +25,15 @@ const Dashboard = () => {
 
   const [list, setList] = useState([]);
   useEffect(()=>{
-    axios.get("http://localhost:3000")
+    axios.get("https://restrodinetech.onrender.com")
     .then(result=>setList(result.data))
     .catch(err=>console.log(err))
   },[])
 
   const handleDelete = (id) =>{
-    axios.delete('http://localhost:3000/deleteItem/'+id)
+    axios.delete('https://restrodinetech.onrender.com/deleteItem/'+id)
     .then((res)=>{console.log(res);
-      axios.get("http://localhost:3000")
+      axios.get("https://restrodinetech.onrender.com")
       .then(result=>setList(result.data))
       .catch(err=>console.log(err));})
     .catch(err=>console.log(err));

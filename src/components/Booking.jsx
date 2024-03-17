@@ -16,7 +16,7 @@ const Booking = (props) => {
   const Submit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/booking", { category, item, eta })
+      .post("https://restrodinetech.onrender.com/booking", { category, item, eta })
       .then((result) => {
         console.log(result);
         navigate("/dashboard");
